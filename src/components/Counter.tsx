@@ -1,11 +1,13 @@
 import React from "react";
 import useCounter from "../stores/UseCounter";
+import TestProxy from "./TestProxy";
 
 const Counter = () => {
   const { count, increment, decrement, reset } = useCounter((store) => store);
   return (
     <React.Fragment>
       <section className="w-full h-screen flex justify-center items-center ">
+        <TestProxy /> ||
         {count}
         <button
           type="button"
