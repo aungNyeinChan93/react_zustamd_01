@@ -1,5 +1,6 @@
 import React from "react";
-import Recipe from "./components/Recipe";
+import ExpenseTracker from "./components/ExpenseTracker";
+// import Recipe from "./components/Recipe";
 // import Auth from "./components/Auth";
 // import TestProxy from "./components/TestProxy";
 // import TestProxy from "./components/TestProxy";
@@ -12,8 +13,9 @@ const App = () => {
         {/* <Counter /> */}
         {/* <TestProxy /> */}
         {/* <Auth /> */}
+        {/* <Recipe /> */}
 
-        <Recipe />
+        <ExpenseTracker />
       </section>
     </React.Fragment>
   );
