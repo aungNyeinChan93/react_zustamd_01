@@ -14,8 +14,6 @@ interface TodoStore {
     toggleStatus: (id: number) => void,
 };
 
-
-
 const useTodoStore = create<TodoStore>((set) => {
     return {
         todos: [],

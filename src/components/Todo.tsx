@@ -45,6 +45,11 @@ const Todo = () => {
             </li>
           ))}
         </ul>
+
+        {/* <ReactQuill
+          theme="snow"
+          className="w-30 h-30 bg-slate-600 text-white"
+        /> */}
       </section>
     </React.Fragment>
   );
