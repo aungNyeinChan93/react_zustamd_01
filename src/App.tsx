@@ -1,5 +1,6 @@
 import React from "react";
-import ExpenseTracker from "./components/ExpenseTracker";
+import Photo from "./components/Photo";
+// import ExpenseTracker from "./components/ExpenseTracker";
 // import Recipe from "./components/Recipe";
 // import Auth from "./components/Auth";
 // import TestProxy from "./components/TestProxy";
@@ -14,8 +15,9 @@ const App = () => {
         {/* <TestProxy /> */}
         {/* <Auth /> */}
         {/* <Recipe /> */}
+        {/* <ExpenseTracker /> */}
 
-        <ExpenseTracker />
+        <Photo />
       </section>
     </React.Fragment>
   );

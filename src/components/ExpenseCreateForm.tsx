@@ -16,7 +16,7 @@ const ExpenseCreateForm: React.FC<ExpenseStore> = ({
   };
   return (
     <React.Fragment>
-      <section className="w-2/6 mx-auto p-6 my-2 shadow-2xl border rounded-3xl border-amber-200">
+      <section className="mx-2 sm:w-2/6 sm:mx-auto p-6 my-2 shadow-2xl border rounded-3xl border-amber-200">
         <form action={addExpenseSubmit}>
           <h3 className="font-bold text-center p-4 text-indigo-400 underline underline-offset-4 text-2xl decoration-amber-400">
             Expense Tracker

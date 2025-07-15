@@ -11,7 +11,7 @@ const ExpenseLists: React.FC<ExpenseListsProps> = ({
 }) => {
   return (
     <React.Fragment>
-      <section className="w-2/6 mx-auto my-4">
+      <section className="mx-4 sm:w-2/6 sm:mx-auto my-4">
         {expenses &&
           Array.isArray(expenses) &&
           expenses?.map((expense) => {

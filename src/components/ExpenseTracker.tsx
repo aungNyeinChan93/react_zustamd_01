@@ -5,7 +5,6 @@ import ExpenseLists from "./ExpenseLists";
 
 const ExpenseTracker = () => {
   const { expenses, addExpense, removeExpense } = useExpenses((store) => store);
-  console.log(expenses);
 
   const totalExpense =
     expenses &&
@@ -19,23 +18,25 @@ const ExpenseTracker = () => {
 
   return (
     <React.Fragment>
-      {totalExpense && (
-        <>
-          <div className="w-2/6 p-4 mx-auto text-center">
-            <p className="inline text-2xl p-2 my-2 bg-gradient-to-r from-red-500 via-green-300 to-yellow-400 text-transparent bg-clip-text">
-              Total Expense - {totalExpense} MMK
-              <span className="ms-2 text-lg">({formattedDate})</span>
-            </p>
-          </div>
-        </>
-      )}
-      <section>
-        <ExpenseCreateForm
-          expenses={expenses}
-          addExpense={addExpense}
-          removeExpense={removeExpense}
-        />
-        <ExpenseLists expenses={expenses} removeExpense={removeExpense} />
+      <section className="sm:mt-[150px]">
+        {totalExpense > 0 && (
+          <>
+            <div className="mx-4 sm:w-2/6 p-4 sm:mx-auto text-center ">
+              <p className="inline text-base sm:text-2xl p-2 my-2 bg-gradient-to-r from-red-500 via-green-300 to-yellow-400 text-transparent bg-clip-text">
+                Total Expense - {totalExpense} MMK
+                <span className="ms-2 text-lg">({formattedDate})</span>
+              </p>
+            </div>
+          </>
+        )}
+        <section>
+          <ExpenseCreateForm
+            expenses={expenses}
+            addExpense={addExpense}
+            removeExpense={removeExpense}
+          />
+          <ExpenseLists expenses={expenses} removeExpense={removeExpense} />
+        </section>
       </section>
     </React.Fragment>
   );
