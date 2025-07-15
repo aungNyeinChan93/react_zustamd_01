@@ -1,5 +1,7 @@
 import React from "react";
-import Quote from "./components/Quote";
+import TodoPage from "./components/Todo";
+// import TestQuill from "./components/TestQuill";
+// import Quote from "./components/Quote";
 // import Photo from "./components/Photo";
 // import ExpenseTracker from "./components/ExpenseTracker";
 // import Recipe from "./components/Recipe";
@@ -18,8 +20,9 @@ const App = () => {
         {/* <Recipe /> */}
         {/* <ExpenseTracker /> */}
         {/* <Photo /> */}
-
-        <Quote />
+        {/* <Quote /> */}
+        {/* <TestQuill /> */}
+        <TodoPage />
       </section>
     </React.Fragment>
   );
