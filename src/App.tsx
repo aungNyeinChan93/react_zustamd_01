@@ -1,5 +1,6 @@
 import React from "react";
-import Photo from "./components/Photo";
+import Quote from "./components/Quote";
+// import Photo from "./components/Photo";
 // import ExpenseTracker from "./components/ExpenseTracker";
 // import Recipe from "./components/Recipe";
 // import Auth from "./components/Auth";
@@ -16,8 +17,9 @@ const App = () => {
         {/* <Auth /> */}
         {/* <Recipe /> */}
         {/* <ExpenseTracker /> */}
+        {/* <Photo /> */}
 
-        <Photo />
+        <Quote />
       </section>
     </React.Fragment>
   );
